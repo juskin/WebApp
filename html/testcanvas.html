@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Test Canvas Tag</title>
+		<meta name="description" content="" />
+		<meta name="author" content="jiacc" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<script src="../js/testcanvas.js"></script>
+	</head>
+	<body>
+		<div>
+			<header>
+				<h1>Canvas Tag</h1>
+			</header>
+			<nav>
+				<p>
+					<a href="../index.html">Home</a>
+				</p>
+				<p>
+					<a href="/contact">Contact</a>
+				</p>
+			</nav>
+			<div>
+				<!--画直线-->
+				<canvas id="canvas_line" width="320" height="240" style="border: 10px solid #cccfff;">
+					你的浏览器不支持HTML5的CANVAS标签！
+					Your browser does not support the HTML5 canvas tag!
+				</canvas>
+				<input type="button" value="DrawLine" onclick="drawLine('canvas_line')"/>
+				<!--画圆形-->
+				<canvas id="canvas_circle" width="320" height="240" style="border: 10px solid blue;">
+					Your browser does not support the HTML5 canvas tag!
+				</canvas>
+				<input type="button" value="DrawCircle" onclick="drawCircle('canvas_circle')"/>
+				<!--画渐变色-->
+				<canvas id="canvas_change" width="320" height="240" style="border: 10px solid #cecece;">
+					Your browser does not support the HTML5 canvas tag!
+				</canvas>
+				<input type="button" value="DrawChange" onclick="drawChange('canvas_change')"/>
+				<!--引入图像-->
+				<canvas id="canvas_picture" width="320" height="240" style="border: 10px solid pink;">
+					Your browser does not support the HTML5 canvas tag!
+				</canvas>
+				<input type="button" value="DrawPicture" onclick="drawPicture('canvas_picture')"/>
+			</div>
+			<footer>
+				<p>
+					&copy; Copyright  by jiacc
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
